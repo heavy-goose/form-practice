@@ -16,16 +16,22 @@
     "lint:fix": "eslint . --fix"
   },
   "eslintConfig": {
-    "extends": ["wesbos"],
+    "extends": [
+      "wesbos"
+    ],
     "rules": {
       "no-restricted-syntax": 0,
-      "quotes": ["error", "double"],
+      "quotes": [
+        "error",
+        "double"
+      ],
       "prettier/prettier": [
         "error",
         {
           "doubleQuote": true,
           "endOfLine": "auto",
-          "tabWidth": 2
+          "tabWidth": 2,
+          "printWidth": 100
         }
       ]
     }

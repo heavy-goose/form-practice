@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Template</title>
-    
+
 </head>
+
 <body>
-   <h1>Hi</h1>
+    <form novalidate>
+
+        <label for="email">
+            <span>Email:</span>
+            <input type="email" id="email" name="email" minlength="8" required>
+            <span class="error"></span>
+        </label>
+
+        <label for="country">
+            <span>Country:</span>
+            <select id="country" name="country" required>
+                <option value="" selected disabled hidden>-- Select Country --</option>
+                <option value="de">Germany</option>
+                <option value="fr">France</option>
+                <option value="ch">Switzerland</option>
+            </select>
+            <span class="error"></span>
+        </label>
+
+        <label for="postal">
+            <span>Postal Code:</span>
+            <input class="invalid" type="text" id="postal" name="postal" required>
+            <span class="error"></span>
+        </label>
+
+        <label for="password">
+            <span>Password:</span>
+            <input class="invalid" type="password" id="password" name="password" required>
+            <span class="error"></span>
+        </label>
+
+        <label for="confirm">
+            <span>Confirm Password:</span>
+            <input class="invalid" type="password" id="confirm" name="confirm" required>
+            <span class="error"></span>
+        </label>
+
+        <button type="submit">Sign Up</button>
+    </form>
 </body>
+
 </html>
